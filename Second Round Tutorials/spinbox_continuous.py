@@ -1,0 +1,18 @@
+import tkinter as tk
+from tkinter import ttk
+
+
+# root window
+win = tk.Tk()
+win.geometry("300x200")
+win.resizable(False, False)
+win.title("Spinbox Demo")
+
+
+# Spinbox
+current_value = tk.StringVar(value = 0)
+spin_box = ttk.Spinbox(win, from_ = 0, to = 30, textvariable = current_value, wrap = True)
+spin_box.pack()
+
+
+win.mainloop()
