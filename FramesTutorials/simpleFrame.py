@@ -23,7 +23,7 @@ class MainFrame(ttk.Frame):
         self.button.pack(**options)
 
         # show the frame on the container
-        self.pack(**options)
+        #self.pack(**options)
 
     def button_clicked(self):
         showinfo(title = "Information", message = "Hello, Tkinter")
